@@ -4,6 +4,12 @@
     box-sizing: border-box;
 
 }
+:root {
+    --bg-color: hsl(0, 0%, 8%);
+    --text-color: hsl(0, 0%, 100%);
+    --padding: 1rem;
+}
+
 @font-face {
     font-family: 'Inter-Bold';
     src: url(assets/fonts/static/Inter-Bold.ttf) format('truetype');
@@ -32,8 +38,9 @@ body {
     flex-direction: column;
     justify-content: center; /* Vertical center */
     align-items: center;     /* Horizontal center */
-    background-color: hsl(0, 0%, 8%);
+    background-color: var(--bg-color);
     text-align: center;
+    
 }
 
 
@@ -68,7 +75,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    color: hsl(0, 0%, 100%);
+    color: var(--text-color);
 }
 .profile-info h1{
     font-size: 24px;
@@ -80,7 +87,7 @@ body {
     color: hsl(75, 94%, 57%);
 }
 .profile-info p{
-    font-family: Inter-Regular;
+    font-family: "Inter-Regular", "Inter", Arial, sans-serif;
     font-size: 14px;
     font-weight: 200;
     color: hsl(0, 0%, 70%);
@@ -98,10 +105,10 @@ body {
 }
 
 .Contact-info{
-    font-family: Inter-SemiBold;
+    font-family: "Inter-SemiBold", "Inter", Arial, sans-serif;
     font-size: 14px;
     font-weight: 600;
-    color: hsl(0, 0%, 100%);
+    color: var(--text-color);
     background-color: hsl(0, 0%, 20%);
     padding: 10px 0;
     text-align: center;
@@ -125,8 +132,8 @@ body {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
-    font-family: Inter-Regular;
-    color: hsl(0, 0%, 100%);
+    font-family: "Inter-Regular", "Inter", Arial, sans-serif;
+    color: var(--text-color);
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
